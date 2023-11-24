@@ -78,21 +78,19 @@ main {
   position: relative;
   top: -8px;
   font-size: 80px;
-  width: 88px;
-  height: 88px;
+  width: 100px;
+  height: 100px;
 }
 
 .current-temperature-value {
-  font-size: 75px;
+  font-size: 60px;
   font-weight: bold;
-  font-family: "Ephesis", cursive;
 }
 
 .current-temperature-unit {
-  font-size: 35px;
+  font-size: 30px;
   position: relative;
   top: -38px;
-  font-family: "Ephesis", cursive;
 }
 
 footer {
