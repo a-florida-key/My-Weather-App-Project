@@ -10,7 +10,6 @@ function displayTemperature(response) {
   humidity.innerHTML = response.data.temperature.humidity;
   windSpeed.innerHTML = response.data.wind.speed;
   currentCondition.innerHTML = response.data.condition.description;
-  icon.innerHTML = response.data.condition.icon;
   icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon"/>`;
   temperatureElement.innerHTML = temperature;
 }
