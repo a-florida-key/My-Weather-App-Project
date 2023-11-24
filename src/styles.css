@@ -4,7 +4,7 @@ body {
 }
 
 a {
-  color: #0f0ce9;
+  color: #d17af9;
   text-decoration: none;
 }
 
@@ -71,7 +71,7 @@ main {
 }
 
 .current-details strong {
-  color: #f65282;
+  color: #d17af9;
 }
 
 .current-temperature-icon {
