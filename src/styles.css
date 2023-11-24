@@ -77,12 +77,12 @@ main {
 .current-temperature-icon {
   position: relative;
   top: -8px;
-  font-size: 40px;
+  font-size: 50px;
   margin-right: 10px;
 }
 
 .current-temperature-value {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
 }
 
