@@ -85,12 +85,14 @@ main {
 .current-temperature-value {
   font-size: 75px;
   font-weight: bold;
+  font-family: "Ephesis", cursive;
 }
 
 .current-temperature-unit {
   font-size: 35px;
   position: relative;
   top: -38px;
+  font-family: "Ephesis", cursive;
 }
 
 footer {
