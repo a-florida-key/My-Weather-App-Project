@@ -5,12 +5,10 @@ function displayTemperature(response) {
   let humidity = document.querySelector("#humidity");
   let windSpeed = document.querySelector("#wind");
   let currentCondition = document.querySelector("#condition");
-  let icon = document.querySelector("current-temperature-icon");
   cityElement.innerHTML = response.data.city;
   humidity.innerHTML = response.data.temperature.humidity;
   windSpeed.innerHTML = response.data.wind.speed;
   currentCondition.innerHTML = response.data.condition.description;
-  icon.innerHTML = response.data.condition.icon;
 
   temperatureElement.innerHTML = temperature;
 }
