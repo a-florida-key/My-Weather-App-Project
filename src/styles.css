@@ -13,7 +13,7 @@ a {
   max-width: 600px;
   margin: 60px auto;
   padding: 30px;
-  border: 5px solid #0f0ce9;
+  border: 10px ridge #efb6f4;
   border-radius: 10px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
@@ -36,7 +36,7 @@ header {
 .search-button {
   margin-left: 5px;
   font-size: 16px;
-  background-color: #0f0ce9;
+  background-color: #efb6f4;
   color: white;
   border: none;
   padding: 20px;
