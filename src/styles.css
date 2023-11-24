@@ -44,6 +44,10 @@ header {
   border-radius: 5px;
 }
 
+.current-details strong {
+  color: black;
+}
+
 main {
   padding: 30px 0;
 }
