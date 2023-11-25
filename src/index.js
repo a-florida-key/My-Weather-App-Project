@@ -61,8 +61,6 @@ let currentDate = new Date();
 currentDateELement.innerHTML = formatDate(currentDate);
 
 function displayForecast() {
-  let forecastElement = document.querySelector("#forecast");
-
   let days = ["Tues", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -70,6 +68,8 @@ function displayForecast() {
     forecastHtml =
       forecastHtml +
       `<div class="weather-forecast-day">
+      <div class="row">
+      <div class=col-2>
               <div class="weather-forecast-date">${day}</div>
               <div class="weather-forecasst-icon"><img
                 src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-night.png"
@@ -81,6 +81,8 @@ function displayForecast() {
               </div>
               </div>`;
   });
-  forecast.innerHTML = forecastHtml;
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
 }
 displayForecast();
