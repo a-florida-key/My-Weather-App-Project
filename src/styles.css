@@ -94,6 +94,7 @@ main {
 }
 
 .weather-forecast {
+  display: flex;
   margin-top: 20px;
   text-align: center;
   color: black;
