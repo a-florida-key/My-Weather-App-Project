@@ -4,10 +4,13 @@ function displayTemperature(response) {
   let cityElement = document.querySelector("#current-city");
   let humidity = document.querySelector("#humidity");
   let windSpeed = document.querySelector("#wind");
+  let time = document.querySelector("time");
+  let date = new Date(response.data.time * 1000);
   let currentCondition = document.querySelector("#condition");
   let icon = document.querySelector("#weatherIcon");
 
   cityElement.innerHTML = response.data.city;
+  time.innerHTML = formatDate(date);
   humidity.innerHTML = response.data.temperature.humidity;
   windSpeed.innerHTML = response.data.wind.speed;
   currentCondition.innerHTML = response.data.condition.description;
@@ -44,11 +47,6 @@ function formatDate(date) {
   return `${formattedDay} ${hours}:${minutes}`;
 }
 
-let currentDateELement = document.querySelector("#current-date");
-let currentDate = new Date();
-
-currentDateELement.innerHTML = formatDate(currentDate);
-
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -56,12 +54,10 @@ function formatDay(timestamp) {
   return days[date.getDay()];
 }
 
-function getForecast(city) {
-  let apiKey = "b2a5adcct04b33178913oc335f405433";
-  let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+let currentDateELement = document.querySelector("#current-date");
+let currentDate = new Date();
 
-  axios.get(apiURL).then(displayForecast);
-}
+currentDateELement.innerHTML = formatDate(currentDate);
 
 function search(event) {
   event.preventDefault();
@@ -95,6 +91,13 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
+}
+
+function getForecast(city) {
+  let apiKey = "b2a5adcct04b33178913oc335f405433";
+  let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+
+  axios.get(apiURL).then(displayForecast);
 }
 
 let searchForm = document.querySelector("#search-form");
