@@ -89,6 +89,7 @@ main {
 .current-temperature-value {
   font-size: 88px;
   font-weight: bold;
+  top: -8px;
 }
 
 .current-temperature-unit {
