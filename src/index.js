@@ -95,4 +95,4 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 }
 
-getForecast();
+getForecast("Paris");
