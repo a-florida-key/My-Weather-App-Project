@@ -11,6 +11,8 @@ a {
 .weather-app {
   background-image: url
     ("https://images.pexels.com/photos/96377/pexels-photo-96377.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 600px;
   margin: 60px auto;
   padding: 30px;
