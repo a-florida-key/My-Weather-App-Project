@@ -1,5 +1,8 @@
 body {
-  background: #f9f7fe;
+  background-image: url
+    (
+      "https://images.pexels.com/photos/96377/pexels-photo-96377.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    );
   font-family: "Roboto", sans-serif;
 }
 
@@ -9,10 +12,6 @@ a {
 }
 
 .weather-app {
-  background-image: url
-    (
-      "https://images.pexels.com/photos/96377/pexels-photo-96377.jpeg?auto=compress&cs=tinysrgb&w=1600"
-    );
   max-width: 600px;
   margin: 60px auto;
   padding: 30px;
