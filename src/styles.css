@@ -80,7 +80,7 @@ main {
 
 .current-temperature-icon {
   position: relative;
-  margin-top: 5px;
+  margin-top: -10px;
   font-size: 80px;
   width: 88px;
   height: 88px;
@@ -89,7 +89,7 @@ main {
 .current-temperature-value {
   font-size: 80px;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: -10px;
 }
 
 .current-temperature-unit {
