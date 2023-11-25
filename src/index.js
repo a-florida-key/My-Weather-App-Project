@@ -62,6 +62,7 @@ currentDateELement.innerHTML = formatDate(currentDate);
 
 function getForecast(city) {
   let apiKey = "b2a5adcct04b33178913oc335f405433";
+  let city = "Paris";
   let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
   console.log(apiURL);
   axios.get(apiUrl).then(displayForecast);
