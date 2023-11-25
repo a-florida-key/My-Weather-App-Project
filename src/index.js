@@ -12,8 +12,6 @@ function displayTemperature(response) {
   currentCondition.innerHTML = response.data.condition.description;
   icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon"/>`;
   temperatureElement.innerHTML = temperature;
-
-  getForecast(response.data.city);
 }
 
 function search(event) {
@@ -95,3 +93,5 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
+
+getForecast();
