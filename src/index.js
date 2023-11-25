@@ -59,3 +59,28 @@ let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tues", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-day">
+              <div class="weather-forecast-date">${day}</div>
+              <div class="weather-forecasst-icon"><img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-night.png"
+              /></div>
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max">84°</span>
+                <span class="weather-forecast-temperature-min">72°</span>
+              </div>
+              </div>
+              </div>`;
+  });
+  forecast.innerHTML = forecastHtml;
+}
+displayForecast();
