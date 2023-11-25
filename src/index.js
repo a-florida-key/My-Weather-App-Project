@@ -75,7 +75,7 @@ function displayForecast() {
                 src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-night.png"
               /></div>
               <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max">84°</span>
+                <span class="weather-forecast-temperature-max"><strong>84°</strong></span>
                 <span class="weather-forecast-temperature-min">72°</span>
               </div>
               </div>
