@@ -69,7 +69,7 @@ function displayForecast() {
       forecastHtml +
       `<div class="weather-forecast-day">
       <div class="row">
-      <div class=col-2>
+      <div class="col-2">
               <div class="weather-forecast-date">${day}</div>
               <div class="weather-forecasst-icon"><img
                 src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-night.png"
@@ -77,6 +77,7 @@ function displayForecast() {
               <div class="weather-forecast-temperatures">
                 <span class="weather-forecast-temperature-max">84°</span>
                 <span class="weather-forecast-temperature-min">72°</span>
+              </div>
               </div>
               </div>
               </div>`;
