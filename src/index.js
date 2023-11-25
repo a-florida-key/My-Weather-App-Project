@@ -12,6 +12,8 @@ function displayTemperature(response) {
   currentCondition.innerHTML = response.data.condition.description;
   icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon"/>`;
   temperatureElement.innerHTML = temperature;
+
+  getForecast(response.data.city);
 }
 
 function search(event) {
@@ -61,6 +63,7 @@ let currentDate = new Date();
 currentDateELement.innerHTML = formatDate(currentDate);
 
 function getForecast(city) {
+  let city = searchInputElement.value;
   let apiKey = "b2a5adcct04b33178913oc335f405433";
   let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
 
@@ -93,4 +96,3 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
-getForecast();
