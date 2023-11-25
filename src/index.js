@@ -76,7 +76,7 @@ function search(event) {
 
 function displayForecast(response) {
   console.log(response.data);
-  let days = ["Tues", "Wed", "Thu", "Fri", "Sat"];
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
   days.forEach(function (day) {
