@@ -95,7 +95,7 @@ main {
 .current-temperature-unit {
   font-size: 25px;
   position: relative;
-  margin-top: 0;
+  margin-top: -5px;
 }
 
 .weather-forecast {
