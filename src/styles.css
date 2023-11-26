@@ -109,6 +109,8 @@ main {
 
 .weather-forecast-day {
   background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .weather-forecast-icon {
