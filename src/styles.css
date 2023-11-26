@@ -106,6 +106,10 @@ main {
   font-size: 16px;
   opacity: 0.5;
 }
+
+.weather-forecast-icon {
+  width: 100%;
+}
 .weather-forecast-temperatures {
   font-size: 13px;
 }
