@@ -107,6 +107,10 @@ main {
   opacity: 0.5;
 }
 
+.weather-forecast-day {
+  background-color: antiquewhite;
+}
+
 .weather-forecast-icon {
   width: 100%;
 }
